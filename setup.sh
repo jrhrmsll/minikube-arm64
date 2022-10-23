@@ -31,7 +31,6 @@ if [[ ! -e /usr/local/bin/docker-compose ]]; then
 fi
 
 # allow docker use as non-root
-groupadd docker
 sudo usermod -aG docker vagrant
 
 # minikube
