@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
     prl.linked_clone = false
 
     prl.name   = "minikube"
-    prl.memory = 2048
+    prl.memory = 2816
     prl.cpus   = 2
   end
 
