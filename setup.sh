@@ -11,7 +11,8 @@ apt-get install -y \
   gnupg \
   lsb-release \
   net-tools \
-  unzip
+  unzip \
+  jq
   
 # Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -23,7 +24,7 @@ apt-get install -y docker-ce docker-ce-cli containerd.io
 docker --version
 
 if [[ ! -e /usr/local/bin/docker-compose ]]; then
-  curl -L "https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-$(uname -s)-$(uname -m)" \
+  curl -L "https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-$(uname -s)-$(uname -m)" \
     -o /usr/local/bin/docker-compose
 
   chmod +x /usr/local/bin/docker-compose
