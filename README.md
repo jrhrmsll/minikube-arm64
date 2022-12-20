@@ -52,3 +52,8 @@ kubectl get pods -A
 ```
 kubectl proxy --port=8080 --address=0.0.0.0 --accept-hosts='.+'
 ```
+
+#### Test Kubernetes API from the host machine
+```
+curl http://localhost:8080/apis
+```
