@@ -20,16 +20,16 @@ vagrant ssh
 
 ### Launch minikube
 ```
-minikube start --kubernetes-version=v1.24.7 
+minikube start --kubernetes-version=v1.25.3
 ```
 
 ### Install kubectl
 ```
-curl -LO https://dl.k8s.io/release/v1.24.7/bin/linux/arm64/kubectl
+curl -LO https://dl.k8s.io/release/v1.25.3/bin/linux/arm64/kubectl
 ```
 
 ```
-curl -LO https://dl.k8s.io/release/v1.24.7/bin/linux/arm64/kubectl.sha256
+curl -LO https://dl.k8s.io/release/v1.25.3/bin/linux/arm64/kubectl.sha256
 echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
 ```
 
